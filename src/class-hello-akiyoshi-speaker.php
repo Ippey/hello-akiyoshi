@@ -1,9 +1,9 @@
 <?php
 
 /**
- * abstract class Hello_Kushimoto_Speaker
+ * abstract class Hello_Akiyoshi_Speaker
  */
-abstract class Hello_Kushimoto_Speaker {
+abstract class Hello_Akiyoshi_Speaker {
 
 	/**
 	 * @return string
@@ -19,6 +19,6 @@ abstract class Hello_Kushimoto_Speaker {
 	 * @return string
 	 */
 	final public function talk_message() {
-		return apply_filters( 'hello_kushimoto_talk_message', $this->say() );
+		return apply_filters( 'hello_akiyoshi_talk_message', $this->say() );
 	}
 }

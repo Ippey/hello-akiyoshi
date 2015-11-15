@@ -1,19 +1,19 @@
 <?php
 
 /**
- * Class Hello_Kushimoto
+ * Class Hello_Akiyoshi
  *
  * plugin core class.
  */
-class Hello_Kushimoto {
+class Hello_Akiyoshi {
 
-	/** @var Hello_Kushimoto_Speaker */
+	/** @var Hello_Akiyoshi_Speaker */
 	private $speaker;
 
 	/**
-	 * @param Hello_Kushimoto_Speaker $speaker
+	 * @param Hello_Akiyoshi_Speaker $speaker
 	 */
-	public function __construct( Hello_Kushimoto_Speaker $speaker ) {
+	public function __construct( Hello_Akiyoshi_Speaker $speaker ) {
 
 		$this->speaker = $speaker;
 
@@ -24,10 +24,10 @@ class Hello_Kushimoto {
 	}
 
 	/**
-	 * register shortcode [kushimoto]
+	 * register shortcode [akiyoshi]
 	 */
 	private function register_shortcode() {
-		$shortcode_tags = apply_filters( 'hello_kushimoto_shortcode_name', 'kushimoto' );
+		$shortcode_tags = apply_filters( 'hello_akiyoshi_shortcode_name', 'akiyoshi' );
 		add_shortcode( $shortcode_tags, array( $this->speaker, 'talk_message' ) );
 	}
 
@@ -37,7 +37,7 @@ class Hello_Kushimoto {
 	public function render() {
 		$chosen = $this->speaker->talk_message();
 		$name   = $this->speaker->whoami();
-		echo "<p class='hello-kushimoto speaker-$name'>$chosen</p>";
+		echo "<p class='hello-akiyoshi speaker-$name'>$chosen</p>";
 	}
 
 	/**
@@ -47,15 +47,18 @@ class Hello_Kushimoto {
 
 		$x = is_rtl() ? 'left' : 'right';
 		$style = "
-        		.hello-kushimoto {
+        		.hello-akiyoshi {
             			float: $x;
         			padding-$x: 15px;
         			padding-top: 5px;
         			margin: 0;
         			font-size: 11px;
         		}
+        		.hello-akiyoshi:before {
+        			content: '\\01F3EE ';
+        		}
         		";
         	
-		wp_add_inline_style( 'wp-admin', apply_filters( 'hello_kushimoto_style', $style ) );
+		wp_add_inline_style( 'wp-admin', apply_filters( 'hello_akiyoshi_style', $style ) );
 	}
 }

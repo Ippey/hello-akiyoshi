@@ -2,11 +2,11 @@
 
 /**
  * Created by PhpStorm.
- * User: torounit
- * Date: 15/11/03
- * Time: 16:53
+ * User: ippey
+ * Date: 15/11/11
+ * Time: 23:00
  */
-abstract class Hello_Kushimoto_Random_Speaker extends Hello_Kushimoto_Speaker {
+abstract class Hello_Akiyoshi_Random_Speaker extends Hello_Akiyoshi_Speaker {
 
 	/**
 	 * @var string
@@ -27,7 +27,7 @@ abstract class Hello_Kushimoto_Random_Speaker extends Hello_Kushimoto_Speaker {
 		$words = $this->get_words();
 
 		$word =  $words[ array_rand( $words ) ];
-		return apply_filters( 'miyasan_say', $word );
+		return apply_filters( 'akiyoshi_say', $word );
 	}
 
 	/**
