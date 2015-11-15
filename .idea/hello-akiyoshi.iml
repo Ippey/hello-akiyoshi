@@ -14,5 +14,17 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/codecept.phar/" />
+          <root url="phar:///Library/WebServer/Documents/wordpress/wp-content/plugins/hello-akiyoshi/codecept.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/codecept.phar/" />
+          <root url="phar:///Library/WebServer/Documents/wordpress/wp-content/plugins/hello-akiyoshi/codecept.phar/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Class Miyasan
+ * Class Akiyoshi
  */
 class Akiyoshi extends Hello_Akiyoshi_Random_Speaker {
 
 	/**
 	 * @var string NickName
 	 */
-	protected $name = 'Akiyoshi';
+	protected $name = 'akiyoshi';
 
 	/**
 	 * apply original filter whoami method
@@ -28,48 +28,36 @@ class Akiyoshi extends Hello_Akiyoshi_Random_Speaker {
 	}
 
 	/**
-	 * Dictionary of Akiyoshi's comments.
+	 * Dictionary of Mr.M's Quotations.
 	 * @return String[]
 	 */
 	public function get_words() {
-		return array(
-//			__('台風中継でおなじみの和歌山県串本町から来ました。','hello-akiyoshi'),
-//			__('お客さんから不吉なメールが来た。見なかったことにしよう。。。','hello-akiyoshi'),
-//			__('めんどくさい案件を全部断って楽な案件だけを求め続けてたらいつのまにか串本に住んでました。','hello-akiyoshi'),
-//			__('え？まだMAMPで消耗してるの？','hello-akiyoshi'),
-//			__('え？まだこれからもMAMPで消耗してるの？','hello-akiyoshi'),
-//			__('Windowsはガン無視です 笑','hello-akiyoshi'),
-//			__('sudoならインストールできた？ だめですよそんなのずっとsudoですることになりますよ？','hello-akiyoshi'),
-//			__('sudoなんて邪道ですよ。そんなもんできたことになりません。','hello-akiyoshi'),
-//			__('あのねみなさんね ブログに書いてあるコマンドとか実行しちゃうでしょ あれ大体間違ってますよ','hello-akiyoshi'),
-//			__('みなさん自分が苦労したこと記事に書きたくなるでしょ？ 苦労したって事はそれはどっか間違ってんですよ','hello-akiyoshi'),
-//			__('CMSのコアのソースを読むとか時間の無駄','hello-akiyoshi'),
-//			__('お見積依頼ですか？','hello-akiyoshi'),
-//			__('それプルリクください','hello-akiyoshi'),
-//			__('プルリクお待ちしてます!','hello-akiyoshi'),
-//			__('なぜそうなるかわかりますか？','hello-akiyoshi'),
-//			__('整理できていない知識はないのと同じですよ','hello-akiyoshi'),
-//			__('とりあえず何か公開しろ。話はそれからじゃっ！','hello-akiyoshi'),
-//			__('オープンソースっぽくない奴はほんとダメ','hello-akiyoshi'),
-//			__('すげー、熱烈に握手をもとめられたのでどうしたのかと思ったら、Contact Form 7の作者とまたもや間違えられました','hello-akiyoshi'),
-//			__('高速が開通したんだって！大阪まで３時間切るかも！','hello-akiyoshi'),
-//			__('つくるのはなんでも作りますｗ（岡本さんがｗ','hello-akiyoshi'),
-//			__('仕事や！ 行ってこい！','hello-akiyoshi'),
-//			__('まじに楽しいのになー。自分が使いたい物を大っぴらに作って放置しとくだけで世界がどれだけ広がるか。','hello-akiyoshi'),
-//			__('自慢じゃないですが、1日で作りました。（自慢ですけど）','hello-akiyoshi'),
-//			__('え？そんなんできたうちに入りませんよ。rootに変わるなんてうんこです。','hello-akiyoshi'),
-//			__('MAMPなんてアンインストールしちゃえばいいんですよ。','hello-akiyoshi'),
-//			__('世界は変化してるんです。半年前はそんなのありませんでした。','hello-akiyoshi'),
-//			__('すぐにsudoしたら？って言うエンジニアは信用しちゃいけません。','hello-akiyoshi'),
-//			__('串本の海？台風の後に犬の散歩してると、サメが打ち上げられたりしてますね。','hello-akiyoshi'),
-//			__('こころが汚いみなさんには見えないと思うけど、今日の串本の星空はめっちゃきれい！','hello-akiyoshi'),
-//			__('I\'m fake Takayuki','hello-akiyoshi'),
-//			__('DMで質問をいただいても回答できないので、GitHubのIssueに書いていただけると助かります。','hello-akiyoshi'),
-//			__('FTPなんてまだあるのか。。。','hello-akiyoshi'),
-//			__('プルリクエストありがとうございます！','hello-akiyoshi'),
-//			__('できてしまった。','hello-akiyoshi'),
-//			__('もっとみんなでいろいろ作ってコードを見せびらかしあったりしたいなーと思うんですよね。','hello-akiyoshi'),
-			__('お持ち帰りは100本からです！','hello-akiyoshi'),
+		$words = array(
+			__('やきとりの名門 秋吉', 'hello-akiyoshi'),
+			__('お持ち帰りは100本までです。', 'hello-akiyoshi'),
+			__('まず注文は赤だしから！', 'hello-akiyoshi'),
+			__('社長！', 'hello-akiyoshi'),
+			__('お嬢ちゃん！', 'hello-akiyoshi'),
+			__('いらっしゃい社長！', 'hello-akiyoshi'),
+			__('焼き鳥は一回のご注文5本からです', 'hello-akiyoshi'),
+			__('ご新規80名さんです！', 'hello-akiyoshi'),
+			__('キャベツのお味は3種類からお選びください！', 'hello-akiyoshi'),
+			__('秋吉のポテトはタレを味わうための棒', 'hello-akiyoshi'),
+			__('おまえは今まで食った純けいの本数を覚えているのか', 'hello-akiyoshi'),
+			__('お盆といえば秋吉', 'hello-akiyoshi'),
+			__('からしにお付けしてお食べください', 'hello-akiyoshi'),
+			__('発祥の地福井で喰ってみろ、うますぎ', 'hello-akiyoshi'),
+			__('雪が降ってきたなぁ、こんな日は純けいを熱燗で逝きたいね。 ', 'hello-akiyoshi'),
+			__('近所の持ち帰り専門店では、ミノは１人１０本しか売ってくれません（泣） ', 'hello-akiyoshi'),
 		);
+		$now = date("His");
+		if ($now < 170000) {
+			$words = array(
+				__('やきとりの名門 秋吉', 'hello-akiyoshi'),
+				__('とりだけに一石二鳥！', 'hello-akiyoshi'),
+			);
+		}
+
+		return $words;
 	}
 }
