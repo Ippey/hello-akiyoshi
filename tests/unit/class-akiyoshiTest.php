@@ -9,7 +9,7 @@ class classAkiiyoshiTest extends \WP_UnitTestCase
 {
 
     private $akiyoshi;
-    protected function setUp() {
+    public function setUp() {
         parent::setUp();
 
         $this->akiyoshi = new Akiyoshi();
@@ -19,7 +19,7 @@ class classAkiiyoshiTest extends \WP_UnitTestCase
 
     public function testGet_words()
     {
-        $rowds = $this->akiyoshi->getWords();
+        $rowds = $this->akiyoshi->get_words();
         $this->assertTrue(is_array($rowds));
     }
 }
