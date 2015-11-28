@@ -1,5 +1,5 @@
-"require-dev":
-    {
-      "lucatume/wp-browser": "master@dev"
-    }
-
+{
+  "require-dev": {
+    "lucatume/wp-browser": "master@dev"
+  }
+}
